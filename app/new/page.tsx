@@ -4,6 +4,8 @@ import NewGeneration from "@/components/new-generation";
 import { Button } from "@/components/ui/button";
 import { createClient } from "@/utils/supabase/server";
 
+export const runtime = 'edge';
+
 export default async function GenerateName({
   searchParams,
 }: {

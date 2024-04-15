@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import { LoginForm } from "@/components/login-form";
 
+export const runtime = 'edge';
+
 export default async function Login() {
   return (
     <>

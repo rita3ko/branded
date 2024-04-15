@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { createClient } from "@/utils/supabase/server";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+export const runtime = 'edge';
 
 export default async function Favorites() {
   const supabase = createClient();

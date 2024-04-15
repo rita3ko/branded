@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { AlertCircle, AlertOctagon } from "lucide-react";
 import Link from "next/link";
+export const runtime = 'edge';
 
 export default function ErrorPage() {
   return (

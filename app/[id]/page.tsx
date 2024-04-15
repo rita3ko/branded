@@ -1,6 +1,8 @@
 import { createClient } from "@/utils/supabase/server";
 import NewGeneration from "@/components/new-generation";
 
+export const runtime = 'edge';
+
 export default async function Names({ params }: { params: { id: string } }) {
   const supabase = createClient();
   const idString = params.id;
