@@ -1,5 +1,3 @@
-import { Tailwind } from "@onedoc/react-print";
-
 export function OnePager({
   nameData,
   userData,
@@ -12,7 +10,6 @@ export function OnePager({
   logoUrl: any;
 }) {
   return (
-    <Tailwind>
       <div className="py-4 px-4">
         <div className="flex justify-center">
           {logoUrl && (
@@ -35,6 +32,5 @@ export function OnePager({
           </a>
         </div>
       </div>
-    </Tailwind>
   );
 }
