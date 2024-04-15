@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SignupForm } from "@/components/signup-form";
 import { createClient } from "@/utils/supabase/server";
 import { signup } from "./actions";
+export const runtime = 'edge';
 
 export default async function Signup({
   searchParams,
