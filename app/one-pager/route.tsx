@@ -15,13 +15,11 @@ export async function GET(req: NextRequest) {
   const logoUrl = JSON.parse(req.nextUrl.searchParams.get("logoUrl")!);
   const name = nameData.name;
 
-  const link  = 
+  return (
       <OnePager
         nameData={nameData}
         userData={userData}
         content={content}
         logoUrl={logoUrl}
-      />
-
-  return link;
+      />);
 }
