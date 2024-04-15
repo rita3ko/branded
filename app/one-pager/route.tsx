@@ -19,22 +19,13 @@ export async function GET(req: NextRequest) {
   const logoUrl = JSON.parse(req.nextUrl.searchParams.get("logoUrl")!);
   const name = nameData.name;
 
-  const { link, error } = await onedoc.render({
-    html: await compile(
+  const link  = 
       <OnePager
         nameData={nameData}
         userData={userData}
         content={content}
         logoUrl={logoUrl}
       />
-    ),
-    title: name,
-    save: true,
-  });
 
-  if (error) {
-    return NextResponse.json({ error }, { status: 500 });
-  }
-
-  return Response.json({ link });
+  return link;
 }
