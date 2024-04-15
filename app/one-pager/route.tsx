@@ -7,6 +7,8 @@ import React from "react";
 
 export const maxDuration = 20;
 export const dynamic = "force-dynamic";
+export const runtime = 'edge';
+
 
 const onedoc = new Onedoc(process.env.ONEDOC_API_KEY!);
 

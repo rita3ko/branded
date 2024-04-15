@@ -2,6 +2,9 @@ import { NextResponse } from "next/server";
 import { OpenAI } from "openai";
 import { init, initLogger, traced, wrapOpenAI } from "braintrust";
 
+export const runtime = 'edge';
+
+
 export const maxDuration = 30;
 export const dynamic = "force-dynamic";
 

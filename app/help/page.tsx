@@ -1,6 +1,8 @@
 import { CaseChat } from "@/components/case-chat";
 import { createClient } from "@/utils/supabase/server";
 
+export const runtime = 'edge';
+
 export default async function HelpPage() {
   const supabase = createClient();
   const {

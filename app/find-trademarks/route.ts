@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
+export const runtime = 'edge';
+
+
 const rapidApiKey = process.env.RAPID_API_KEY!;
 export async function GET(req: NextRequest) {
   const searchTerm = req.nextUrl.searchParams.get("searchTerm")!;

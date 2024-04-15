@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { OpenAI } from "openai";
 import { init, initLogger, traced, wrapOpenAI } from "braintrust";
 
+export const runtime = 'edge';
+
 const logger = initLogger({ projectName: "namebase" });
 const openai = wrapOpenAI(
   new OpenAI({

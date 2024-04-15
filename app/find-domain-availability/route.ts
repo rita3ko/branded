@@ -3,6 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 export const maxDuration = 30;
 export const dynamic = "force-dynamic";
 
+export const runtime = 'edge';
+
 export async function GET(req: NextRequest) {
   let name = req.nextUrl.searchParams.get("query");
 
