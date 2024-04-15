@@ -10,7 +10,7 @@ import SiteFooter from "@/components/site-footer";
 import { CommandMenu } from "@/components/command-menu";
 import { createClient } from "@/utils/supabase/server";
 import { Analytics } from "@vercel/analytics/react"
-
+export const runtime = "edge";
 
 const inter = Inter({
   subsets: ["latin"],
